@@ -1,0 +1,79 @@
+
+
+body{
+    width: 100vw;
+    padding: 0px;
+    background-color: #fef7f2;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    font-family: 'Libre Franklin', sans-serif;
+    margin: 0px;
+}
+
+button{
+    background-color: #A5A58D;
+    width: 100px;
+    padding: 5px;
+    height: 30px;
+}
+
+#blogHeader{
+    background-color: #DDBEA9;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+}
+#blogHeader>h1{
+    justify-self: flex-start;
+}
+
+nav{
+    justify-self: flex-end;
+}
+nav>ul{
+    list-style: none;
+    display: flex;
+}
+nav>ul>li{
+    margin: 20px;
+}
+
+.contentTitle{
+    width: 100%;
+    text-align: center;
+    border-bottom: 1px solid #000;
+    line-height: 0.1em;
+    margin: 10px 0 20px;
+}
+.contentTitle > span{
+    background: #fef7f2;
+    padding: 0 10px;
+}
+
+#blogContent{
+    width: 100vw;
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+#blogInterface{
+    width: 80vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+
+.blogCard{
+    width: 23vw;
+    height: 300px;
+    background-color: #cdcdc4;
+    margin: 10px;
+    padding: 20px;
+    border: 2px solid black;
+}
+
