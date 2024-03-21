@@ -5,7 +5,7 @@
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Technology Blog</title>
-    <link rel="stylesheet" type="text/css" href="/css/style.css"/>
+    <link rel="stylesheet" type="text/css" href="/css/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,100..900;1,100..900&display=swap"
@@ -18,18 +18,19 @@
         <h1>Tech Blog</h1>
         <nav>
             <ul>
-                <li>Home</li>
-                <li>Dashboard</li>
-                {{#if loggedIn}}
-                <a>Log Out</a>
+                <a href="/">Home</a>
+                {{#if logged_in}}
+                <a href="/dashboard">Dashboard</a>
+                <a id="/logout">Log Out</a>
                 {{else}}
-                <li>Login</li>
+                <a href="/login">Dashboard</a>
+                <a href="/login">Login</a>
                 {{/if}}
             </ul>
         </nav>
     </header>
     <main>{{{ body }}}</main>
-    {{#if loggedIn}}
+    {{#if logged_in}}
     <script src="/js/logout.js"></script>
     {{/if}}
 </body>

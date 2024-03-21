@@ -1,19 +1,13 @@
-<div id="blogContent">
+<div class="content">
     <div>
         <h2 class="contentTitle"><span>Blog Posts</span></h2>
     </div>
     <div id="blogInterface">
         {{#each blogs as |blog|}}
-        <div class="blogCard" id={{id}}>
-            <h3>{{blog.title}}</h3>
-            <h5>Created by {{blog.user.username}}</h5>
-            <p>{{blog.content}}</p>
-        </div>
+            {{> blog-details}}
         {{/each}}
     </div>
     <div>
-        <button>Add a Blog Post</button>
+        <button id="addBlogBtn" onclick="window.location.replace('/add')">Add a Blog Post</button>
     </div>
 </div>
-
-<script src="/js/selectBlogs.js"></script>

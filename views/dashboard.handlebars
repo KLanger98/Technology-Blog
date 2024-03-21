@@ -1,0 +1,13 @@
+<div class="content">
+    <div>
+        <h2 class="contentTitle"><span>Your Blog Posts</span></h2>
+    </div>
+    <div id="blogInterface">
+        {{#each blogs as |blog|}}
+            {{> blog-details}}
+        {{/each}}
+    </div>
+    <div>
+        <button onclick="window.location.replace('/add')">Add a Blog Post</button>
+    </div>
+</div>

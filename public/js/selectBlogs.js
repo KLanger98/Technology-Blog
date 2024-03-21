@@ -1,10 +1,12 @@
 
-let blogs = document.querySelectorAll(".blogCard");
 
-blogs.forEach((blog) => {
-    blog.addEventListener('click', (event) => {
-        let id = event.target.id
-        console.log(id)
-        window.location.assign(`/blog/${id}`);
-    });
-})
+const selectBlog = (event) => {
+    let id;
+    if(!event.target.classList.contains('blogCard')){
+        id = event.target.closest('.blogCard').id
+    } else{
+        id = event.target.id;
+    }
+
+    window.location.assign(`/blog/${id}`)
+}

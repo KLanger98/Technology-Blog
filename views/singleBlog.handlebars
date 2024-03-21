@@ -1,14 +1,29 @@
-<div>
+<div class="content" data-blog={{blog.id}} id="blog">
+    <div class="blogCard" id="singleBlog">
+        <h2 id="blogHeading">{{blog.title}}</h2>
+    
     <div>
-        <h2>{{title}}</h2>
+        <h3>{{blog.title}}</h3>
+        <p id="blogContent">{{blog.content}}</p>
     </div>
-    <div>
-        <h3>{{title}}</h3>
-        <p>{{content}}</p>
+        {{#if belongsToUser}}
+            <button id="editButton" onclick="editBlog()">Edit</button>
+            <button id="deleteButton" onclick="deleteBlog()">Delete</button>
+        {{/if}}
     </div>
-    <div>
-        <button>Edit Post</button>
+    <div id="commentSection">
+        {{#each blog.comments as |comment|}}
+            {{> comment-details}}
+        {{/each}}
     </div>
+    {{#if logged_in}}
+        <form id="addComment">
+            <h4>Comment on this post:</h4>
+            <input type="textarea" id="comment">
+            <button type="submit">Post Comment</button>
+        </form>
+    {{/if}}
 </div>
 
-<script></script>
+<script src="/js/addComment.js"></script>
+<script src="/js/editDelete.js"></script>
