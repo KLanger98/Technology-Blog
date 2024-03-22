@@ -1,68 +1,43 @@
 # Technology-Blog
 
-1. # <Your-Project-Title>
-2. 
-3. ## Description
-4. 
-5. Provide a short description explaining the what, why, and how of your project. Use the following questions as a guide:
-6. 
-7. - What was your motivation?
-8. - Why did you build this project? (Note: the answer is not "Because it was a homework assignment.")
-9. - What problem does it solve?
-10. - What did you learn?
-11. 
-12. ## Table of Contents (Optional)
-13. 
-14. If your README is long, add a table of contents to make it easy for users to find what they need.
-15. 
-16. - [Installation](#installation)
-17. - [Usage](#usage)
-18. - [Credits](#credits)
-19. - [License](#license)
-20. 
-21. ## Installation
-22. 
-23. What are the steps required to install your project? Provide a step-by-step description of how to get the development environment running.
-24. 
-25. ## Usage
-26. 
-27. Provide instructions and examples for use. Include screenshots as needed.
-28. 
-29. To add a screenshot, create an `assets/images` folder in your repository and upload your screenshot to it. Then, using the relative file path, add it to your README using the following syntax:
-30. 
-31. ![alt text](assets/images/screenshot.png)
-32. 
-33. ## Credits
-34. 
-35. List your collaborators, if any, with links to their GitHub profiles.
-36. 
-37. If you used any third-party assets that require attribution, list the creators with links to their primary web presence in this section.
-38. 
-39. If you followed tutorials, include links to those here as well.
-40. 
-41. ## License
-42. 
-43. The last section of a high-quality README file is the license. This lets other developers know what they can and cannot do with your project. If you need help choosing a license, refer to [https://choosealicense.com/](https://choosealicense.com/).
-44. 
-45. ---
-46. 
-47. 🏆 The previous sections are the bare minimum, and your project will ultimately determine the content of this document. You might also want to consider adding the following sections.
-48. 
-49. ## Badges
-50. 
-51. ![badmath](https://img.shields.io/github/languages/top/nielsenjared/badmath)
-52. 
-53. Badges aren't necessary, but they demonstrate street cred. Badges let other developers know that you know what you're doing. Check out the badges hosted by [shields.io](https://shields.io/). You may not understand what they all represent now, but you will in time.
-54. 
-55. ## Features
-56. 
-57. If your project has a lot of features, list them here.
-58. 
-59. ## How to Contribute
-60. 
-61. If you created an application or package and would like other developers to contribute to it, you can include guidelines for how to do so. The [Contributor Covenant](https://www.contributor-covenant.org/) is an industry standard, but you can always write your own if you'd prefer.
-62. 
-63. ## Tests
-64. 
-65. Go the extra mile and write tests for your application. Then provide examples on how to run them here.
-66. 
+## Description
+The following project was completed as a part of the Adelaide University Web Development Bootcamp. The aim was to create a content management system for blog posts regarding technology which would allow anybody to sign up and make their own posts to be seenb by other users. By doing so I was able to consolidate my understanding of the MVC paradigm and implemement it for this assignment. This challenge also acted as a great review for Object Relation Models, Route handling and as an introduction to templating engines such as handlebars.js. This has therefore been my first complete fullstack application that also utilises session storage and cookies to log in, log out and create users.
+
+Overall, this has been a great exercise in understanding how to maintain a separation of concerns and how to structure a Fullstack Application.
+
+
+## Installation
+If you would like to run this project in your local environment follow these instructions.
+1. Clone the repository to your local computer using 'git clone'
+
+2. Navigate to the directory and download all necessary packages with 'npm install'
+
+3. Open mysql in the terminal and run 'SOURCE db/schema.sql;' to initiate the database
+
+4. Use 'npm run seed' in the terminal again to seed the database with some example data. 
+
+5. Update the .env file to include your username and password 
+
+6. Run 'node server.js' to execute the server and use the link in the terminal to access the web page.
+
+ 
+## Usage
+If you are not logged in you can browse posted blogs on the homepage, clicking any blog to see if there are any comments associated with them. 
+
+![HomePage](./Assets/Home.png)
+
+If you click either 'Dashboard' or 'Log in' you will be presented with a Log In page that will allow you to log in if you have an existing account.
+
+![Login](./Assets/Login.png)
+
+If you do not have an existing account, select the 'Create Account' link below the login to navigate to the Sign up page. 
+
+![SignUp](./Assets/SignUp.png)
+
+Once logged in or signed up, you can navigate to the dashboard to either create a blog post or view your existing blog posts. 
+
+![Dashboard](./Assets/Dashboard.png)
+
+By Selecting a blog post you will be given the options to either edit or delete the blog if it belongs to you. Otherwise you will have the ability to comment on the blog. 
+
+![Comment or Edit/Delete](./Assets/Single.png)

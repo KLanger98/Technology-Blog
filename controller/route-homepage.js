@@ -69,7 +69,7 @@ router.get('/dashboard', withAuth, async (req, res) => {
 router.get('/blog/:id', async (req,res) => {
     try{
       const blogData = await Blog.findByPk(req.params.id,{
-        include: [{model:Comment}, {model: User}]
+        include: [{model: Comment, include: [User]}, {model: User}]
       });
 
       const blog = blogData.get({ plain:true })
@@ -82,6 +82,8 @@ router.get('/blog/:id', async (req,res) => {
         belongsToUser = false;
       }
       
+      console.log(blog)
+
       res.render('singleBlog', {blog, logged_in: req.session.logged_in, belongsToUser});
       
     }catch(err){

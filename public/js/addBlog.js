@@ -3,7 +3,7 @@ const saveBlog = async (event) => {
     event.preventDefault();
 
     const title = document.querySelector('#blog-title').value;
-    const content = document.querySelector('#blog-content').value;
+    const content = document.querySelector('#blog-content-box').value;
     const date_created = new Date();
 
     if (title && content) {

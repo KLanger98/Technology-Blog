@@ -19,9 +19,11 @@ main{
 
 button{
     background-color: #A5A58D;
-    width: 100px;
-    padding: 5px;
-    height: 30px;
+    font-size: 20px;
+    padding: 10px;
+    margin: 20px;
+    border: 2px solid black;
+
 }
 
 #blogHeader{
@@ -71,32 +73,78 @@ nav>ul>a{
 #blogInterface{
     width: 80vw;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
 
 }
 
+#addBlog{
+    width: 70vw;
+    display: flex;
+    flex-direction: column;
+}
+
+#blog-content-box{
+    height: 100px;
+}
+
 .blogCard{
-    width: 23vw;
-    height: 300px;
+    width: 70vw;
     background-color: #cdcdc4;
     margin: 10px;
     padding: 20px;
     border: 2px solid black;
+}
+
+.blogCard > button{
+    margin: 5px;
+    font-size: 12px;
+    float: right;
 }
 
 .comment-card{
     width: 50vw;
-    height: 200px;
     background-color: #cdcdc4;
     margin: 10px;
-    padding: 20px;
+    padding: 15px;
     border: 2px solid black;
 }
 
-#loginForm{
+#commentInterface{
+    width: 50vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+#commentInterface > input{
+    width: 70%;
+    height: 40px;
+}
+
+#commentInterface > button{
+    width: 25%;
+    font-size: 15px;
+    height: 40px;
+    margin: 5px;
+}
+
+.commentContent{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.commentContent > h4{
+    margin-right: 20px;
+}
+
+#login-form, #signup-form{
     width: 50vw;
     display: flex;
     flex-direction: column;
     justify-content: center;
+}
+#login-form > input{
+    height: 20px;
 }

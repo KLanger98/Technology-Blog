@@ -1,4 +1,7 @@
 <div class="comment-card">
-    <h5>User</h5>
-    <p>{{content}}</p>
+    <div class="commentContent">
+        <h4>{{user.username}}</h4>
+        <p>{{content}}</p>
+    </div>
+    <p>Posted {{format_date date_created}}</p>
 </div>

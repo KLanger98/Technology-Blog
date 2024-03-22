@@ -3,7 +3,7 @@
         <h2 id="blogHeading">{{blog.title}}</h2>
     
     <div>
-        <h3>{{blog.title}}</h3>
+        <h4>Created by {{blog.user.username}} on {{format_date blog.date_created}}</h4>
         <p id="blogContent">{{blog.content}}</p>
     </div>
         {{#if belongsToUser}}
@@ -19,8 +19,11 @@
     {{#if logged_in}}
         <form id="addComment">
             <h4>Comment on this post:</h4>
-            <input type="textarea" id="comment">
-            <button type="submit">Post Comment</button>
+            <div id="commentInterface">
+                <textarea type="textarea" id="comment"></textarea>
+                <button type="submit">Submit</button>
+            </div>
+            
         </form>
     {{/if}}
 </div>

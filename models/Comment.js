@@ -21,6 +21,7 @@ Comment.init(
     },
     blog_id: {
       type: DataTypes.INTEGER,
+      onDelete: 'CASCADE',
       references: {
         model: 'blog',
         key: 'id',

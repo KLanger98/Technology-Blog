@@ -8,16 +8,16 @@ const commentData = [
         blog_id: 1
     },
     {
-        content: "So Cool!", 
+        content: "This is useful!", 
         date_created: 'January 22, 2024 10:00:00',
-        user_id: 2,
-        blog_id: 1
+        user_id: 1,
+        blog_id: 3
     },
     {
-        content: "So Cool!", 
+        content: "Thought provoking!", 
         date_created: 'January 22, 2024 10:00:00',
-        user_id: 2,
-        blog_id: 1
+        user_id: 3,
+        blog_id: 2
     }
 ]
 
