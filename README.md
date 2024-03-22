@@ -5,6 +5,8 @@ The following project was completed as a part of the Adelaide University Web Dev
 
 Overall, this has been a great exercise in understanding how to maintain a separation of concerns and how to structure a Fullstack Application.
 
+Access a deployed version of thi application here: https://whispering-coast-99073-14fb6aebab6e.herokuapp.com/ 
+
 
 ## Installation
 If you would like to run this project in your local environment follow these instructions.
@@ -22,6 +24,10 @@ If you would like to run this project in your local environment follow these ins
 
  
 ## Usage
+Access a deployed version here: https://whispering-coast-99073-14fb6aebab6e.herokuapp.com/
+
+Or use the above instructions to install this project on your local environment. 
+
 If you are not logged in you can browse posted blogs on the homepage, clicking any blog to see if there are any comments associated with them. 
 
 ![HomePage](./Assets/Home.png)
