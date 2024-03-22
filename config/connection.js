@@ -1,5 +1,4 @@
 const Sequelize = require('sequelize');
-const { sequelize } = require('../models/Blog');
 require('dotenv').config();
 
 let sequelize;
